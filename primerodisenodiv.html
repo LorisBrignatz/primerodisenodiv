@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer diseno con divs</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container {
+            width: 1470px;
+            margin: 0 auto;
+        }
+
+        .top-bar {
+            background-color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-item {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+
+        .nav-item:hover {
+            background-color: white;
+            color: rgb(0, 0, 0);
+        }
+
+        .special-option {
+            background-color: white;
+            color: rgb(0, 0, 0);
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .big-banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        .content-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .content-section p {
+            font-size: 30px;
+            font-family: 'Brush Script MT', cursive;
+            margin-top: 5px;
+        }
+
+        .photo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .photo-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .photo-item {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            margin: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+
+        .photo-item .text-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        footer .left-section {
+            flex: 1;
+            text-align: left;
+        }
+
+        footer .center-section {
+            flex: 1;
+            text-align: center;
+        }
+
+        footer .right-section {
+            flex: 1;
+            text-align: right;
+        }
+
+        .footer-content {
+            margin-bottom: 10px;
+        }
+
+        .separator {
+            flex-basis: 100%;
+            border-top: 1px solid white;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+
+        .copyright {
+            color: white;
+            margin-top: 10px;
+            text-align: center;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <div class="logo">
+                <img src="C:\Users\loris\Downloads\logo.png" alt="Logo">
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item">NUEVO</a>
+                <a href="#" class="nav-item">HOMBRE</a>
+                <a href="#" class="nav-item">MUJER</a>
+                <a href="#" class="nav-item">NIÑOS</a>
+                <a href="#" class="nav-item">OFERTAS</a>
+            </nav>
+            <a href="#" class="special-option">MI CUENTA</a>
+        </div>
+
+        <div class="big-banner">
+            <img src="C:\Users\loris\Downloads\menu.png" alt="Bandeau Image">
+        </div>
+
+        <div class="content-section">
+            <h2>ELEGANCIA URBANA</h2>
+            <p>Vestirse con confianza</p>
+        </div>
+
+        <div class="photo-grid">
+            <div class="photo-row">
+                <div class="photo-item">
+                    <img src="C:\Users\loris\Downloads\vetements\manteau.png" alt="img 1">
+                    <div class="text-overlay">Abrigos</div>
+                </div>
+                <div class="photo-item">
+                    <img src="C:\Users\loris\Downloads\vetements\veste.png" alt="img 2">
+                    <div class="text-overlay">Chaquetas</div>
+                </div>
+                <div class="photo-item">
+                    <img src="C:\Users\loris\Downloads\vetements\pull.png" alt="img 3">
+                    <div class="text-overlay">Jerséis</div>
+                </div>
+                <div class="photo-item">
+                    <img src="C:\Users\loris\Downloads\vetements\pantalon.png" alt="img 4">
+                    <div class="text-overlay">Pantalones</div>
+                </div>
+                <div class="photo-item">
+                    <img src="C:\Users\loris\Downloads\vetements\t-shirt.png" alt="img 5">
+                    <div class="text-overlay">Camisetas</div>
+                </div>
+                <div class="photo-item">
+                    <img src="C:\Users\loris\Downloads\vetements\ensembles.png" alt="img 6">
+                    <div class="text-overlay">Conjuntos</div>
+                </div>
+            </div>
+            <div class="photo-row">
+                <div class="photo-item">
+                    <img src="C:\Users\loris\Downloads\vetements\short.png" alt="img 7">
+                    <div class="text-overlay">Cortos</div>
+                </div>
+                <div class="photo-item">
+                    <img src="C:\Users\loris\Downloads\vetements\sport.png" alt="img 8">
+                    <div class="text-overlay">Deporte</div>
+                </div>
+                <div class="photo-item">
+                    <img src="C:\Users\loris\Downloads\vetements\chaussures.png" alt="img 9">
+                    <div class="text-overlay">Zapatos</div>
+                </div>
+                <div class="photo-item">
+                    <img src="C:\Users\loris\Downloads\vetements\chapeaux.png" alt="img 10">
+                    <div class="text-overlay">Sombreros</div>
+                </div>
+                <div class="photo-item">
+                    <img src="C:\Users\loris\Downloads\vetements\bijoux.png" alt="img 11">
+                    <div class="text-overlay">Joyas</div>
+                </div>
+                <div class="photo-item">
+                    <img src="C:\Users\loris\Downloads\vetements\accessoires.png" alt="img 12">
+                    <div class="text-overlay">Accesorios</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="left-section">
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="C:\Users\loris\Downloads\logo.png" alt="Logo">
+                </div>
+                <p>Marca de ropa deportiva</p>
+                <p>Encarna un estilo moderno y sofisticado</p>
+            </div>
+        </div>
+        <div class="center-section">
+            <div class="footer-content">
+                <nav class="nav-menu">
+                    <a href="#" class="nav-item">Nuevo</a>
+                    <a href="#" class="nav-item">Hombre</a>
+                    <a href="#" class="nav-item">Mujer</a>
+                    <a href="#" class="nav-item">Niño</a>
+                    <a href="#" class="nav-item">Ofertas</a>
+                </nav>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="footer-content">
+                Dirección: 123 Calle de la Empresa, SLP, México<br>
+                Número de teléfono: +123 456 789<br>
+                Correo: EU@entreprise.com<br>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="copyright">
+            © 2024 Elegancia Urbana. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+</html>
